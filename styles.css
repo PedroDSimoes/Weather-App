@@ -1,0 +1,125 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    background-image: repeating-linear-gradient(to right, #f5e3e8, #a2d0f3);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  h1 {
+    font-weight: bold;
+    color: #9a5858;
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.3);
+    font-size: 2.4rem;
+  }
+  
+  input[type=text] {
+    width: 10rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin: 0 auto;
+  }
+
+  button {
+    background-color: #447748;
+    color: white;
+    padding: 0.7rem 1.4rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  #weather {
+    font-size: 1rem;
+    color: #b44646;
+    letter-spacing: 0.1rem;
+    margin-bottom: 5rem;
+  }
+  
+  .forecast-date {
+    font-size: 2rem;
+    color: rgb(21, 66, 66);
+  }
+  
+  #button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem 0;
+  }
+  
+  #forecast {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 3rem;
+    font-size: 0.8rem;
+  }
+  
+  .forecast-time {
+    margin-top: 2rem;
+    border-right: 0.2rem solid rgb(116, 19, 19);
+    border-top: 0.2rem solid black;
+    padding-top: 1rem;
+    padding-right: 1rem;
+  }
+  
+  #myMap {
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  
+  footer {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 500px) {
+
+    #button-container {
+     display: flex;
+     flex-direction: column;
+      }
+
+    button {
+        margin-top: 1rem;
+      }
+
+    #forecast {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+        font-size: 0.8rem;
+      }
+
+    .forecast-time {
+        margin-top: 1rem;
+        border-top: 0.2rem solid black;
+        padding-top: 1rem;
+        border-right: none;
+        color:rgb(204, 111, 201)
+      }
+
+    .forecast-date {
+        font-size: 1.5rem;
+        color: rgb(11, 27, 27);
+        margin-top: 1rem;
+      }
+
+      #myMap {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 2rem;
+      }
+  }
